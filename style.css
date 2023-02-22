@@ -223,11 +223,11 @@ div#card-body-icon{
     width: 60%;
   }
 }
-@media(min-width: 370px){
-  /* #hero{
-    height: 83.6vh;
+@media(min-width: 760px){
+  #hero{
+    height: 80vh;
     max-height: 100vh;
-  } */
+  }
   #brand-logo{
     width: 50%;
   }
@@ -236,11 +236,11 @@ div#card-body-icon{
   }
 }
 
-@media(min-width: 500px) and (max-width: 992px){
-  /* #hero{
-    height: 82.8vh;
+@media(min-width: 500px) and (max-width: 1200px){
+  #hero{
+    height: 85vh;
     max-height: 100vh;
-  } */
+  }
   #brand-logo{
     width: 50%;
   }
