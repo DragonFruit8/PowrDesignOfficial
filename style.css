@@ -72,14 +72,14 @@ div#toTop{
 #brand-logo:focus{
   cursor: default;
 }
-a .nav-link{
+a.nav-link{
   color: white !important;
 }
 .nav-link:hover:not(.active), .btn:hover{
   color: rgb(247, 132, 0) !important;
   transition: .9 color ease-in-out;
 }
-#resume{
+a#resume{
   color: rgb(255, 98, 98) !important;
   transition: 2 all ease-in-out;
   scale: 1;
