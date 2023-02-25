@@ -18,7 +18,7 @@ body{
 }
 
 #heroSection{
-    background-image: url(../img/hero.jpg);
+    background: url( ./img/hero.jpg );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ div#card-body-icon{
     max-height: 100vh;
   }
   #brand-logo{
-    width: 50%;
+    width: 75%;
   }
   .news-input {
     width: 50%;
