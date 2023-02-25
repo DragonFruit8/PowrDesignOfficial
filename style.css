@@ -211,19 +211,20 @@ div#card-body-icon{
 /* .news-input{
   
 } */
-@media(min-height: 320px) and (max-width: 500px){
-  /* #hero{
-    height: 82.9vh;
-    max-height: 100vh;
-  } */
+
+@media(min-width: 992px) and (max-width: 1800px){
+  #hero{
+    height: 80vh;
+    max-height: auto;
+  }
   #brand-logo{
-    width: 40%;
+    width: 80%;
   }
   .news-input {
-    width: 60%;
+    width: 40%;
   }
 }
-@media(min-width: 760px){
+@media(min-width: 769px) and (max-width: 991px){
   #hero{
     height: 80vh;
     max-height: 100vh;
@@ -235,34 +236,27 @@ div#card-body-icon{
     width: 50%;
   }
 }
-
-@media(min-width: 500px) and (max-width: 1200px){
+@media(min-width: 501px) and (max-width: 768px){
+  #hero{
+    height: 82vh;
+    max-height: auto;
+  }
+  #brand-logo{
+    width: 60%;
+  }
+  .news-input {
+    width: 40%;
+  }
+}
+@media(min-height: 320px) and (max-width: 500px){
   #hero{
     height: 85vh;
     max-height: 100vh;
   }
   #brand-logo{
-    width: 75%;
+    width: 90%;
   }
   .news-input {
-    width: 50%;
-  }
-}
-@media(min-width: 1800px){
-  /* #hero{
-    height: 50.3vh;
-    max-height: auto;
-  } */
-  .news-input {
-    width: 40%;
-  }
-}
-@media(min-width: 1400px){
-  /* #hero{
-    height: 79.7vh;
-    max-height: auto;
-  } */
-  .news-input {
-    width: 40%;
+    width: 60%;
   }
 }
