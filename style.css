@@ -96,7 +96,7 @@ div#toTop{
   display: flex;
   flex: 1 1 auto;
   align-items: center;
-  background: url(./img/hero.jpg) no-repeat center center/cover;
+  background: url(./src/img/hero.jpg) no-repeat center center/cover;
 }
 #hero::after{
   content: '';
@@ -107,7 +107,7 @@ div#toTop{
   margin: 0;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
 
