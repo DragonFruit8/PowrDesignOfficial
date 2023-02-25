@@ -72,7 +72,7 @@ div#toTop{
 #brand-logo:focus{
   cursor: default;
 }
-.nav-link{
+a .nav-link{
   color: white !important;
 }
 .nav-link:hover:not(.active), .btn:hover{
