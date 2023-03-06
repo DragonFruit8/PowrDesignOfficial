@@ -2,8 +2,14 @@
     "gitConfigUser.profiles": [
         {
             "label": "DragonFruit8",
-            "email": "Jtbyers19@gmail.com",
             "userName": "DragonFruit8",
+            "email": "Jtbyers19@gmail.com",
+            "selected": false
+        },
+        {
+            "label": "Powrdesign",
+            "email": "jtbyers19@gmail.com",
+            "userName": "Jtbyers19@gmail.com",
             "selected": false
         }
     ]
