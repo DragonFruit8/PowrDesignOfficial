@@ -140,11 +140,11 @@
         <div class="col-lg-6 col-md-6">
           <div class="col">
             <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            <p>Located in the Ann Arbor area and service within a 40 mile radius</p>
             <!-- Location -->
             <div class="col">
               <span class="d-flex"><i id="icon" class="material-symbols-outlined p-2">location_on</i>
-                <p> 123 Easy St, Ann Arbor, MI 48104</p>
+                <p> Ann Arbor, MI 48104</p>
               </span>
               <!-- Phone Number -->
               <div class="col">
@@ -158,33 +158,43 @@
                   <p class="d-flex text-center">123-456-7890</p>
                 </span>
               </div>
-              <form action="">
+              <form action="https://formsubmit.co/info@powrdev.tech" method="POST" target="_blank">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+                  <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" required>
+                  <input type="text" name="_honey" style="display:none">
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                  <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="3"></textarea>
+                  <label for="service" class="form-label"> Service Requested</label>
+                  <input type="hidden" name="_subject" value=''>
+                  <select name="_subject" class="form-control" id="service" rows="3" required>
+                    <option value="_blank" disabled selected>Select Service</option>
+                    <option value="SystemInstall">Entertainment Installation</option>
+                    <option value="Notary">Notary Public</option>
+                    <option value="Assistant">Personal Assistant</option>
+                    <option value="SmartInstall">Smart Home Installation</option>
+                    <option value="TechRepair">Technology Repair</option>
+                    <option value="WebDev">Website Development</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <div><label for="message" class="form-label">Message</label></div>
+                  <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                  <input type="hidden" name="_captcha" value="false">
                 </div>
                 <button type="submit" class="btn btn-primary col-12">Submit</button>
               </form>
             </div>
-            <div class="col-lg-12">
-              <form action="">
-
-              </form>
-            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6 d-flex justify-content-center my-auto">
           <div class="col">
-            <h2>Map</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            <h2>Home Base</h2>
+            <p></p>
             <div class="col">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.569497000001!2d-83.7433556847751!3d42.2808729791856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34f8a8f5b8a7%3A0x1b3b4f9b5b4b0b0!2sUniversity%20of%20Michigan%20Ann%20Arbor!5e0!3m2!1sen!2sus!4v1629200000000!5m2!1sen!2sus"
