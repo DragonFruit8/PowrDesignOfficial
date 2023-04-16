@@ -7,3 +7,8 @@ node_modules/webpack/lib/Compiler.js:548:11)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
     at process._tickCallback (internal/process/next_tick.js:180:9)
 
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

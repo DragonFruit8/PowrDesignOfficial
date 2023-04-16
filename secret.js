@@ -1,34 +1,53 @@
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-ctx.stroke();
-function cButtonClick() {
+var resumeButton = document.getElementById('resumeButton');
+// const filename = "./docs/JTB Resume.pdf";
 
-  var p = document.createElement(`
-  <!-- Modal -->
-  <div class="modal fade" id="canvas" tabindex="-1" aria-labelledby="canvas" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-      <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      ...
-      </div>
-      <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-      </div>
-      </div>
-      </div>`
-      );
-      
-      
-      let hiddenS = document.getElementById('hiddenS');
-      $('body').append(p);
+  // When the user scrolls down 20px from the top of the document, show the button
+  let mybutton = document.getElementById("myBtn");
 
-return hiddenS;
-}
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+    
+resumeButton.addEventListener('click', function checkAuth(){
+     var emp = prompt("Enter your password!")
+     if(emp ==  `only1knows2@`){
+      onStartedDownload();
+      
+    } else{
+      alert("Wrong!");
+    }
+  });
+
+ function checkAuth(onStartedDownload) {
+  
+  function onStartedDownload() {
+    console.log(`Started downloading: ${id}`);
+  }
+  
+  function onFailed(error) {
+    console.log(`Download failed: ${error}`);
+  }
+  
+  let downloadUrl = "./docs/JTB Resume.pdf";
+  
+  let downloading = downloadUrl.downloads.download({
+    url : downloadUrl,
+    filename : './docs/JTB Resume.pdf',
+    conflictAction : 'uniquify'
+  });
+  
+  downloading.then(onStartedDownload, onFailed);}

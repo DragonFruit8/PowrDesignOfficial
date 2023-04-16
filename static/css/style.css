@@ -1,0 +1,308 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;}
+body{
+  user-select: none;
+}
+
+/* Button, Forms, Utilities */
+  button{
+    font-size: 1.3rem !important;
+    padding: 10px 50px !important;
+}
+
+.heroSection{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url(./img/hero.jpg) no-repeat center center/cover;
+  height: 60vh;
+  /* z-index: ; */
+    /* color: #000; */
+    /* mix-blend-mode: ; */
+}
+
+#heroContent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 0 20px;
+}
+#profilePic{
+    max-width: 400px;
+    max-height: 450px;
+    /* border-radius: 50%; */
+    /* border: 5px solid #630000; */
+}
+i.material-icons{
+    font-size: 3rem;
+    color: #d9d200;
+}
+i#myBtn:hover, i#myBtn:focus, #toTop:hover, #toTop:focus{
+    color: #d9d200;
+    cursor: pointer;
+  color: red!important;
+  transition: .5s all ease-in-out;
+  opacity: 1!important;
+}
+a{
+  font-size: 1.3rem !important;
+}
+div#toTop{
+  width: .25rem !important;
+  height: .25rem !important;
+  padding: .015rem!important;
+  background-color: rgba(0, 0, 0, .5)!important;
+  opacity: .6!important;
+}
+#brand-logo{
+  cursor: default;
+  width: 100%;
+}
+#brand-logo:hover{
+  cursor: pointer;
+}
+#brand-logo:focus{
+  cursor: default;
+}
+a.nav-link{
+  color: white!important;
+}
+a.active{
+  color: rgb(247, 132, 0) !important;
+}
+.nav-link:hover:not(.active), .btn:hover{
+  color: rgb(247, 132, 0) !important;
+  transition: .9 color ease-in-out;
+}
+a#resume{
+  color: rgb(98, 176, 255) !important;
+  transition: 2 all ease-in-out;
+  scale: 1;
+}
+#resume:hover{
+  scale: 1.1;
+  color: rgb(161, 0, 0) !important;
+ text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.7)!important;
+  transition: 1 all ease-in-out;
+}
+/* #hero{
+  height: 85vh;
+  max-height: 95vh;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  background: url(./src/img/hero.jpg) no-repeat center center/cover;
+} */
+/* #hero::after{
+  content: '';
+  width: 100%;
+  height: 92%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+} */
+#resumeButton{
+  display: flex;
+}
+#overlay{
+  content: '';
+  position: absolute;
+  display: flex;
+  flex: 1 1 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#overlay-text{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+a#canvasButton{
+  position: fixed;
+  opacity: 0;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  bottom: 0;
+  left: 0;
+  padding: 0 !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 25px;
+  border: 0 !important;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 10000;
+  padding: 0;
+  cursor: pointer;
+  background: url(./img/spotify-logo-30.png) center center;
+  background-position: center center;
+  background-size: contain;
+  width: auto;
+  height: auto;
+  transform: rotate(0deg);
+  transition: all 500ms ease-in-out;
+}
+a#canvasButton:hover{
+  display: flex;
+  scale: .9;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+  transform: rotate(-360deg);
+}
+.modal-dialog{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative !important;
+  cursor: pointer;
+}
+#myBtn{
+  user-select: none;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 2.5rem; /* Increase font size */
+  background-color: white;
+  opacity: .7;
+}
+#icon{
+  font-size: 3rem;
+}
+#icon-small{
+  font-size: .35rem;
+  width: 50px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: middle;
+  text-justify: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.hide{
+  display: none;
+  width: 0;
+}
+.qrcode{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+  border: none;
+}
+#footer{
+  background-color: #000;
+  display: flex !important;
+  text-align: center !important;
+  text-justify: center !important;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+#icon-holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: middle;
+  text-justify: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.active {
+  color: rgb(88, 88, 255) !important;
+}
+div#card-body-icon{
+  border: 0px transparent solid !important;
+}
+.card-body, #feature-img{
+  border-radius: 15px 15px 0px 0px !important;
+  border: 1px rgba(0, 0, 0, 0.2) solid !important;
+  /* box-shadow: 5px 5px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+#feature-holder{
+  border-radius: 15px 15px 10px 10px !important;
+  box-shadow: 5px 5px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#icon-image{
+  min-width: 175px;
+  min-height: 175px;
+  object-fit: cover;
+  background-color: transparent;
+  border: none;
+  
+}
+
+/* .news-input{
+  
+} */
+
+@media(min-width: 992px) and (max-width: 1800px){
+  #overlay{
+    height: 72vh;
+  }
+  #brand-logo{
+    width: 80%;
+  }
+  .news-input {
+    width: 40%;
+  }
+}
+@media(min-width: 769px) and (max-width: 991px){
+
+  #brand-logo{
+    width: 50%;
+  }
+  .news-input {
+    width: 50%;
+  }
+}
+@media(min-width: 501px) and (max-width: 768px){
+  #overlay{
+    height: 68vh;
+  }
+  #brand-logo{
+    width: 60%;
+  }
+  .news-input {
+    width: 40%;
+  }
+}
+@media(min-height: 320px) and (max-width: 500px){
+  #overlay{
+    height: 69vh;
+  }
+  #brand-logo{
+    width: 90%;
+  }
+  .news-input {
+    width: 60%;
+  }
+}
