@@ -21,7 +21,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: url(./img/hero.jpg) no-repeat center center/cover;
+  background: url(../img/hero.jpg) no-repeat center center/cover;
   height: 60vh;
   /* z-index: ; */
     /* color: #000; */

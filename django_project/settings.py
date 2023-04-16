@@ -119,6 +119,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = '/home/powrdev/public_html/static'
+
 STATICFILES_DIRS = [
     './static',
 ]
