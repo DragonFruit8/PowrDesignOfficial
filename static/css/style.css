@@ -17,6 +17,7 @@ body{
     padding: 10px 50px !important;
 }
 
+<<<<<<< HEAD:static/css/style.css
 .heroSection{
   background-size: cover;
   background-position: center;
@@ -25,6 +26,18 @@ body{
   height: 60vh;
   /* z-index: ; */
     /* color: #000; */
+=======
+#heroSection{
+    background: url(./img/hero.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #000;
+>>>>>>> 12d0a0e1be469fa8a2c5c3f092661ad35cf1b2d3:style.css
     /* mix-blend-mode: ; */
 }
 
@@ -117,8 +130,14 @@ a#resume{
 #resumeButton{
   display: flex;
 }
+<<<<<<< HEAD:static/css/style.css
 #overlay{
   content: '';
+=======
+
+.overlay{
+  /* content: '';/ */
+>>>>>>> 12d0a0e1be469fa8a2c5c3f092661ad35cf1b2d3:style.css
   position: absolute;
   display: flex;
   flex: 1 1 0;
