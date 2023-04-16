@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9+pih%+qdu#%0g396(9fv^1*eod^r1=1hj&-=uq5k!kf8w2mg^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://www.powrdev.tech/", "https://powrdev.tech/", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["https://www.powrdev.tech:8000/", "https://powrdev.tech:8000/", "localhost", "127.0.0.1", "89.117.139.14",]
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = '/home/powrdev/public_html/static'
+STATIC_ROOT = '/home/u846356402/domains/powrdev.tech/public_html/static'
 
 STATICFILES_DIRS = [
     './static',
